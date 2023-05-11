@@ -1,6 +1,5 @@
-import initSwc_, { transformSync } from "npm:@swc/wasm-web@1.3.57";
+import initSwc, { transformSync } from "https://esm.sh/@swc/wasm-web@1.3.57";
 
-const initSwc = initSwc_.default;
 await initSwc();
 const result = transformSync(`console.log('hello')`, {});
 console.log(result);
